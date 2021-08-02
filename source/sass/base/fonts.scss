@@ -1,11 +1,21 @@
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BebasNeue";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Bebas Neue"),
-    url("../fonts/bebas-neue-v2-latin-regular.woff2") format("woff2"),
-    url("../fonts/bebas-neue-v2-latin-regular.woff") format("woff");
+  src: local("BebasNeue"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local("BebasNeue"),
+    url("../fonts/BebasNeueBold.woff2") format("woff2"),
+    url("../fonts/BebasNeueBold.woff") format("woff");
 }
 
 @font-face {

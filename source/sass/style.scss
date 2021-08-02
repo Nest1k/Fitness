@@ -1,3 +1,17 @@
-@import "global/normalize.scss";
-@import "global/fonts.scss";
-@import "global/base.scss";
+@import "base/normalize.scss";
+@import "base/fonts.scss";
+@import "base/variables.scss";
+@import "base/base.scss";
+@import "block/visually-hidden.scss";
+@import "block/header.scss";
+@import "block/main.scss";
+@import "block/gym.scss";
+@import "block/membership.scss";
+@import "block/banner.scss";
+@import "block/trainers.scss";
+@import "block/promo.scss";
+@import "block/reviews.scss";
+@import "block/form.scss";
+@import "block/contacts.scss";
+@import "block/footer.scss";
+

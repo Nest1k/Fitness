@@ -1,0 +1,123 @@
+.form {
+  background-color: $navy-blue;
+  min-height: 337px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  h2 {
+    color: $white;
+    font-family: "BebasNeue", "Arial", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 49px;
+    line-height: 63px;
+    text-transform: uppercase;
+    margin-top: 63px;
+    margin-bottom: 10px;
+    width: 100%;
+    @media (max-width: $tablet-width-only) {
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 69px;
+    }
+    @media (max-width: $mobile-width-only) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    min-height: 324px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 386px;
+  }
+}
+
+.form__container {
+  width: 60%;
+  margin-right: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 410px;
+  @media (max-width: $tablet-width-only) {
+    width: 62%;
+    margin-right: 38px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 90%;
+    min-width: 290px;
+    margin-right: 0;
+  }
+}
+
+.form__name {
+  margin-top: 25px;
+  width: 46%;
+  input {
+    color: $white;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    background-color: $navy-blue;
+    border: 0;
+    border-bottom: 1px solid $light-blue;
+    padding: 0;
+    padding-bottom: 5px;
+    &::placeholder {
+      color: $white;
+      padding: 0;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 44%;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.form__phone {
+  margin-top: 25px;
+  width: 46%;
+  input {
+    color: $white;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    background-color: $navy-blue;
+    border: 0;
+    border-bottom: 1px solid $light-blue;
+    padding: 0;
+    padding-bottom: 5px;
+    &::placeholder {
+      color: $white;
+      padding: 0;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 44%;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin-top: 38px;
+  }
+}
+
+.form__submit {
+  background-color: $navy-blue;
+  width: 100%;
+  height: 52px;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 3px solid $white;
+  margin-top: 30px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 40px;
+  }
+}

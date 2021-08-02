@@ -1,0 +1,202 @@
+.banner {
+  width: 90%;
+  max-width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  color: $white;
+  align-items: flex-start;
+  overflow: hidden;
+  picture {
+    width: 57%;
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    @media (max-width: $tablet-width-only) {
+      height: auto;
+      min-height: auto;
+      width: 100%;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 88%;
+    max-height: 292px;
+  }
+  @media (max-width: $mobile-width-only) {
+    max-height: auto;
+    min-height: 584px;
+    width: 91%;
+    max-width: 440px;
+  }
+}
+
+.banner__crossfit {
+  background-color: $red;
+  width: 43%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 85px;
+  h2 {
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+    font-family: "BebasNeue", "Arial", sans-serif;
+    letter-spacing: 0.03em;
+    width: 201px;
+    margin-top: 87px;
+    margin-bottom: 0;
+    margin-left: 78px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 52px;
+      line-height: 52px;
+      margin-top: 51px;
+      margin-left: 45px;
+      width: 120px;
+    }
+    @media (max-width: $mobile-width-only) {
+      margin-left: 0;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  a {
+    color: $white;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 25px 113px;
+    border: 4px solid $white;
+    margin-left: 76px;
+    margin-top: 27px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 13px 52px;
+      margin-left: 45px;
+      margin-top: 16px;
+      border: 2px solid $white;
+    }
+    @media (max-width: $mobile-width-only) {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 49px;
+  }
+  @media (max-width: $mobile-width-only)  {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.banner__text {
+  margin-left: 78px;
+  margin-top: 5px;
+  @media (max-width: $tablet-width-only) {
+    margin-left: 45px;
+    margin-top: 0;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-right: 15px;
+  }
+}
+
+.banner__conteiner {
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  @media (max-width: $tablet-width-only) {
+    margin-top: 45px;
+    margin-left: 25px;
+  }
+}
+
+.crossfit__data {
+  width: 63%;
+  p{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 78%;
+    max-width: 46px;
+  }
+}
+
+.crossfit__day {
+  display: flex;
+  border-top: 1px solid $white;
+  p{
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+.crossfit__year {
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 6px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+}
+
+.crossfit__time {
+  p{
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 0;
+    }
+  }
+  .crossfit__time-number {
+    font-size: 40px;
+    line-height: 48px;
+    border-top: 1px solid $white;
+    margin-top: 0;
+    padding-bottom: 0;
+    @media (max-width: $tablet-width-only) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

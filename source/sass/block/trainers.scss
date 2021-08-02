@@ -1,0 +1,220 @@
+.trainers {
+  color: $white;
+  max-width: 1160px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 117px;
+  h2 {
+    font-size: 49px;
+    line-height: 49px;
+    font-family: "BebasNeue", "Arial", sans-serif;
+    letter-spacing: 0.03em;
+    color: $navy-blue;
+    margin-bottom: 49px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 42px;
+      line-height: 42px;
+      text-align: center;
+      margin-bottom: 43px;
+    }
+    @media (max-width: $mobile-width-only) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 225px;
+    margin-bottom: 0;
+    @media (max-width: $tablet-width-only) {
+      text-align: center;
+    }
+    @media (max-width: $mobile-width-only) {
+      text-align: center;
+      padding-top: 48px;
+    }
+  }
+  span {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    display: none;
+    @media (max-width: $tablet-width-only) {
+      text-align: center;
+    }
+    @media (max-width: $mobile-width-only) {
+      text-align: center;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: $tablet-width-only) {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 574px;
+    }
+    @media (max-width: $mobile-width-only) {
+      width: 268px;
+    }
+    li {
+      width: 22%;
+      @media (max-width: $tablet-width-only) {
+        width: 47%;
+      }
+      @media (max-width: $mobile-width-only) {
+        width: 100%;
+      }
+    }
+  }
+  ol {
+    padding-left: 68px;
+    padding-top: 37px;
+    display: none;
+    li {
+      padding-bottom: 13px;
+      font-size: 14px;
+      line-height: 21px;
+      width: 143px;
+      list-style-type: disc;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    margin-top: 98px;
+  }
+}
+
+.trainers__item--anna {
+  content: "";
+  background-image: url("../img/photo-anna@1x.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  height: 294px;
+  background-size: 260px 294px;
+  &:hover {
+    ol,
+    span {
+      display: block;
+    }
+    background-color: rgba(16, 38, 84, 0.89);
+    p {
+      padding-top: 34px;
+    }
+  }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-anna@2x.jpg");
+    background-size: 260px 294px;
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    background-size: 268px 294px;
+    display: none;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    height: 274px;
+    background-size: 226px 274px;
+  }
+}
+
+.trainers__item--alex {
+  content: "";
+  background-image: url("../img/photo-alex@1x.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  height: 294px;
+  background-size: 260px 294px;
+  &:hover {
+    ol,
+    span {
+      display: block;
+    }
+    background-color: rgba(16, 38, 84, 0.89);
+    p {
+      padding-top: 34px;
+    }
+  }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-alex@2x.jpg");
+    background-size: 260px 294px;
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    background-size: 268px 294px;
+    display: none;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    height: 274px;
+    background-size: 226px 274px;
+  }
+}
+
+.trainers__item--alexandr {
+  content: "";
+  background-image: url("../img/photo-alexandr@1x.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  height: 294px;
+  background-size: 260px 294px;
+  &:hover {
+    ol,
+    span {
+      display: block;
+    }
+    background-color: rgba(16, 38, 84, 0.89);
+    p {
+      padding-top: 34px;
+    }
+  }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-alexandr@2x.jpg");
+    background-size: 260px 294px;
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    background-size: 268px 294px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    height: 274px;
+    background-size: 226px 274px;
+    display: none;
+  }
+}
+
+.trainers__item--mary {
+  content: "";
+  background-image: url("../img/photo-mary@1x.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  height: 294px;
+  background-size: 260px 294px;
+  &:hover {
+    ol,
+    span {
+      display: block;
+    }
+    background-color: rgba(16, 38, 84, 0.89);
+    p {
+      padding-top: 34px;
+    }
+  }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-mary@2x.jpg");
+    background-size: 260px 294px;
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    background-size: 268px 294px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    height: 274px;
+    background-size: 226px 274px;
+  }
+}

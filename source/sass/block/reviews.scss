@@ -1,0 +1,118 @@
+.reviews {
+  text-align: center;
+  padding-bottom: 110px;
+  h2 {
+    font-family: "BebasNeue", "Arial", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 49px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $navy-blue;
+    margin-top: 12px;
+    margin-bottom: 49px;
+    @media (max-width: $tablet-width-only) {
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 40px;
+      margin-bottom: 41px;
+    }
+    @media (max-width: $mobile-width-only) {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 43px;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 90px;
+  }
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 60px;
+  }
+}
+
+.reviews__list {
+  li {
+    margin: 0 auto;
+    width: 560px;
+    min-height: 242px;
+    text-align: left;
+    background-color: $navy;
+    color: $white;
+    margin-bottom: 10px;
+    @media (max-width: $tablet-width-only) {
+      width: 566px;
+    }
+    @media (max-width: $mobile-width-only) {
+      min-width: 226px;
+      width: 71%;
+    }
+  }
+}
+
+.reviews__item-name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-left: 170px;
+  padding-top: 54px;
+  position: relative;
+  margin-bottom: 12px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/photo-reviews@1x.png");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    left: 62px;
+    top: 62px;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/photo-reviews@2x.png");
+      background-size: 80px 80px;
+    }
+    @media (max-width: $tablet-width-only) {
+      left: 65px;
+    }
+    @media (max-width: $mobile-width-only) {
+      background-image: url("../img/photo-reviews-mobile@1x.png");
+      background-repeat: no-repeat;
+      left: 41px;
+      top: 41px;
+      width: 68px;
+      height: 68px;
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/photo-reviews-mobile@2x.png");
+        background-size: 68px 68px;
+    }
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    padding-left: 173px;
+  }
+  @media (max-width: $mobile-width-only) {
+    text-align: left;
+    min-width: 62px;
+    width: 28%;
+    padding-left: 124px;
+    padding-top: 46px;
+  }
+}
+
+.reviews__item-text {
+  font-size: 16px;
+  line-height: 22px;
+  width: 328px;
+  padding-left: 170px;
+  margin-top: 10px;
+  @media (max-width: $tablet-width-only) {
+    padding-left: 173px;
+  }
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    min-width: 176px;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 52%;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,204 @@
+.header {
+  background: linear-gradient(45deg, rgb(0, 61, 133) 9%, rgb(184, 0, 39) 87%);
+  padding-bottom: 33px;
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 40px;
+  }
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1141px;
+  margin: 0 auto;
+  img {
+    padding-right: 80px;
+    margin-top: -4px;
+    padding-bottom: 10px;
+    @media (max-width: $tablet-width-only) {
+      min-width: 324px;
+      min-height: 390px;
+      padding-right: 0;
+      margin-top: 25px;
+    }
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    min-width: 680px;
+    width: 88%;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 92%;
+    min-width: 290px;
+    justify-content: center;
+  }
+}
+
+.header__contact {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  min-width: 1160px;
+  margin: 0 auto;
+  padding-top: 33px;
+  img {
+    @media (max-width: $tablet-width-only) {
+      width: 82px;
+      height: 17px;
+    }
+    @media (max-width: $mobile-width-only) {
+      width: 68px;
+      height: 15px;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 88%;
+    min-width: 678px;
+    padding-top: 38px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+    min-width: 290px;
+    padding-top: 19px;
+  }
+}
+
+.header__phone {
+  color: $white;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 26px;
+  &:hover {
+    opacity: 50%;
+  }
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.header__description {
+  width: 377px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: $white;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  text-transform: uppercase;
+  padding-left: 17px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: $white;
+    font-family: "Roboto Condensed", "Courier", monospace;
+    font-size: 12px;
+    line-height: 14px;
+    border: 4px solid $white;
+    height: 11px;
+    padding: 21px 55px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    letter-spacing: 0.05em;
+    &:hover {
+      opacity: 50%;
+    }
+    @media (max-width: $tablet-width-only) {
+      padding: 21px 31px;
+      margin-bottom: 45px;
+      margin-top: 35px;
+    }
+    @media (max-width: $mobile-width-only) {
+      padding: 22px 83px;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    min-width: 325px;
+    max-width: 325px;
+    padding-right: 30px;
+    padding-left: 0;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-width: 290px;
+    max-width: 290px;
+    padding-right: 0;
+  }
+}
+
+.header__text {
+  font-family: "Roboto Condensed", "Courier", monospace;
+  font-size: 14px;
+  line-height: 21px;
+  width: 113px;
+  text-transform: none;
+  padding-right: 27px;
+  padding-top: 13px;
+  text-align: right;
+  @media (max-width: $tablet-width-only) {
+    padding-top: 0;
+  }
+  @media (max-width: $mobile-width-only) {
+    padding-right: 10px;
+  }
+}
+
+.header__city {
+  font-size: 49px;
+  padding-top: 110px;
+  padding-bottom: 10px;
+  @media (max-width: $tablet-width-only) {
+    font-size: 34px;
+    padding-left: 100px;
+    line-height: 40px;
+    padding-top: 71px;
+  }
+  @media (max-width: $mobile-width-only) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.header__head {
+  font-size: 109px;
+  letter-spacing: 0.03em;
+  line-height: 109px;
+  font-weight: 700;
+  @media (max-width: $tablet-width-only) {
+    font-size: 86px;
+    line-height: 86px;
+  }
+  @media (max-width: $mobile-width-only) {
+    font-size: 78px;
+    line-height: 78px;
+  }
+}
+
+.header__social {
+  margin-top: 425px;
+  padding-left: 40px;
+  a {
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    &:hover {
+      opacity: 50%;
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
