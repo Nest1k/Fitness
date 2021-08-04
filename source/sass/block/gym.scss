@@ -37,12 +37,14 @@
   }
   @media (max-width: $tablet-width-only) {
     width: 68%;
+    min-width: 502px;
     padding-left: 0;
     padding-top: 65px;
   }
   @media (max-width: $mobile-width-only) {
     width: 91%;
     padding-top: 41px;
+    min-width: auto;
   }
 }
 

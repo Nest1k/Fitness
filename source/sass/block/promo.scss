@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   margin-bottom: 80px;
   justify-content: space-between;
+  margin-top: 79px;
   h2 {
     width: 100%;
     font-size: 49px;
@@ -24,15 +25,18 @@
     @media (max-width: $mobile-width-only) {
       font-size: 32px;
       line-height: 32px;
+      margin-bottom: 42px;
     }
   }
   @media (max-width: $tablet-width-only) {
     width: 88%;
     margin-bottom: 60px;
+    margin-top: 64px;
   }
   @media (max-width: $mobile-width-only) {
     width: 91%;
     margin-bottom: 40px;
+    margin-top: 44px;
   }
 }
 
@@ -139,7 +143,8 @@
 .promo__list {
   width: 48.5%;
   li {
-    border: 7px solid transparent;
+    border-width: 7px;
+    border-style: solid;
     background: $white;
     background-position: 0 0, 100% 0;
     -moz-border-image: -moz-linear-gradient(left, #D10A42 0%, #00359F 100%);

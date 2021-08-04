@@ -12,7 +12,7 @@
 .header__wrap {
   display: flex;
   justify-content: space-between;
-  width: 1141px;
+  width: 1160px;
   margin: 0 auto;
   img {
     padding-right: 80px;
@@ -97,7 +97,7 @@
   color: $white;
   font-family: "BebasNeue", "Arial", sans-serif;
   text-transform: uppercase;
-  padding-left: 17px;
+  padding-left: 20px;
   p {
     margin: 0;
   }
@@ -109,7 +109,7 @@
     border: 4px solid $white;
     height: 11px;
     padding: 21px 55px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     margin-top: 50px;
     letter-spacing: 0.05em;
     &:hover {
@@ -125,8 +125,8 @@
     }
   }
   @media (max-width: $tablet-width-only) {
-    min-width: 325px;
-    max-width: 325px;
+    min-width: 327px;
+    max-width: 327px;
     padding-right: 30px;
     padding-left: 0;
   }
@@ -143,8 +143,8 @@
   line-height: 21px;
   width: 113px;
   text-transform: none;
-  padding-right: 27px;
-  padding-top: 13px;
+  padding-right: 29px;
+  padding-top: 8px;
   text-align: right;
   @media (max-width: $tablet-width-only) {
     padding-top: 0;

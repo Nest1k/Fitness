@@ -32,6 +32,7 @@
     box-sizing: border-box;
     @media (min-resolution: 1.5dppx) {
       background-image: url(../img/discs-desktop@2x.png);
+      background-size: 287px 494px;
     }
     @media (max-width: $tablet-width-only) {
       width: 347px;
@@ -40,6 +41,7 @@
       background-image: url(../img/discs-tablet@1x.png);
       @media (min-resolution: 1.5dppx) {
         background-image: url(../img/tablet-desktop@2x.png);
+        background-size: 347px 444px;
       }
     }
     @media (max-width: $mobile-width-only) {
