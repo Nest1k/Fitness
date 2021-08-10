@@ -1,0 +1,283 @@
+.timetable {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.timetable__wrapper h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.timetable__table {
+  margin-top: 62px;
+}
+
+.timetable__table-time {
+  display: flex;
+  max-width: 1157px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timetable__table-time-list {
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timetable__table-time-list li {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  padding: 49px 13px;
+  border: 2px solid $navy;
+  width: fit-content;
+  margin-top: 8px;
+  color: #15367a;
+}
+
+.timetable__table-time-list li:first-child {
+  padding: 0;
+  margin-top: 0;
+  border: 2px solid transparent;
+  width: 66px;
+  height: 66px;
+}
+
+.timetable__table-day-classes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.timetable__table-day-classes-list {
+  margin: 0;
+  padding: 0;
+}
+
+.timetable__table-day-classes-list li:not(:first-child) {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  padding: 49px 10px;
+  border: 2px solid transparent;
+  max-width: 125px;
+  margin-top: 8px;
+  color: #15367a;
+  text-align: center;
+  background-color: $grey;
+}
+
+.timetable__table-day-classes-list li:not(:first-child):hover {
+  border: 2px solid $navy;
+  background-color: transparent;
+}
+
+.timetable__table-day {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  width: 125px;
+  margin-top: 8px;
+  color: #15367a;
+  text-align: center;
+  padding: 18px 10px;
+  border: 2px solid $navy;
+  background-color: transparent;
+}
+
+.timetable__table-day-classes .timetable__table-day-classes-list .timetable__table-active {
+  color: $red;
+  border: 2px solid $red;
+  background-color: transparent;
+}
+
+.timetable__table-day-classes-list .timetable__table-day--active {
+  background-color: $red;
+  border: 2px solid $red;
+  color: $white;
+}
+
+.timetable__table-time-list .timetable__table-time--active {
+  background-color: $red;
+  border: 2px solid $red;
+  color: $white;
+}
+
+.timetable__table-time-overley {
+  display: none;
+}
+
+@media (max-width: $tablet-width-only) {
+  .timetable {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .timetable__wrapper h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .timetable__table-time {
+    width: 91.8%;
+  }
+
+  .timetable__table {
+    margin-top: 50px;
+  }
+
+  .timetable__table-day-classes {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .timetable__table-day-classes::-webkit-scrollbar {
+    width: 100%;
+    height: 4px;
+  }
+
+  .timetable__table-day-classes::-webkit-scrollbar-track {
+    background-color: #feebef;
+
+  }
+
+  .timetable__table-day-classes::-webkit-scrollbar-thumb {
+    background-color: $red;
+  }
+
+  .timetable__table-day-classes-list {
+    margin-right: 8px;
+  }
+
+  .timetable__table-time-list li {
+    padding: 48px 13px;
+  }
+
+  .timetable__table-day {
+    max-width: 146px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .timetable {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .timetable__wrapper h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .timetable__table-time {
+    position: relative;
+    width: 93%;
+  }
+
+  .timetable__table-time-list li {
+    padding: 35px 12px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .timetable__table-day-classes {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .timetable__table-day-classes-list {
+    position: relative;
+    display: none;
+    margin-right: 0;
+  }
+
+  .timetable__table-day-classes-list--active {
+    display: block;
+  }
+
+  .timetable__table-day-classes-list li {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: none;
+    width: calc(100% - 78px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .timetable__table-day {
+    position: relative;
+  }
+
+  .timetable__table-day::after {
+    display: flex;
+    position: absolute;
+    content: "";
+    right: -52px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 58px;
+    z-index: 10;
+  }
+
+  .timetable__table-day-classes::after {
+    display: flex;
+    position: absolute;
+    content: url("../img/arrow-down.svg");
+    right: 0;
+    top: 8px;
+    width: 52px;
+    height: 58px;
+    border: 2px solid $navy;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timetable__table-day-arrow--active::after {
+    content: url("../img/arrow-up.svg");
+  }
+
+  .timetable__table-day-classes-list li:not(:first-child) {
+    font-size: 16px;
+    line-height: 16px;
+    max-width: none;
+    width: calc(100% - 4px);
+    padding: 35px 0px;
+  }
+
+  .timetable__table-time-overley {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    opacity: 0.8;
+  }
+
+  .timetable__table-time-overley--active {
+    display: block;
+  }
+
+  .timetable__table-day--active-list {
+    margin-top: -2px;
+  }
+
+  .timetable__table-day-classes-list--active:first-child li {
+    margin-top: 8px;
+  }
+
+  .timetable__table-day--active-list~li {
+    display: none;
+
+  }
+}

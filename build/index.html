@@ -7,8 +7,8 @@
   <meta name="description" content="Liga A. Fitness">
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="BebasNeueRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -60,7 +60,7 @@
       <section class="gym">
 
         <div class="gym__container-text">
-          <h2>Тренажерный зал</h2>
+          <h1>Тренажерный зал</h1>
           <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
           <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
@@ -129,7 +129,7 @@
 
         <div class="banner__crossfit">
           <h2>SUPER GAMES</h2>
-          <div class="banner__conteiner">
+          <div class="crossfit">
             <div class="crossfit__data">
               <p>Дата</p>
               <div class="crossfit__day">
@@ -160,80 +160,86 @@
 
       <section class="trainers">
         <h2>Тренеры</h2>
-        <ul>
-          <li class="trainers__item--anna">
-            <p>Анна Павлова</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--alex">
-            <p>Алексей Лавров</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--alexandr">
-            <p>Александр Пашков</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--mary">
-            <p>Мария Кетова</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--anna visually-hidden">
-            <p>Анна Павлова</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--alex visually-hidden">
-            <p>Алексей Лавров</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--alexandr visually-hidden">
-            <p>Александр Пашков</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-          <li class="trainers__item--mary visually-hidden">
-            <p>Мария Кетова</p>
-            <span>CrossFit</span>
-            <ol>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
-            </ol>
-          </li>
-        </ul>
+
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="trainers__item trainers__item--anna swiper-slide">
+              <p>Анна Павлова</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--alex swiper-slide">
+              <p>Алексей Лавров</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--alexandr swiper-slide">
+              <p>Александр Пашков</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--mary swiper-slide">
+              <p>Мария Кетова</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--anna visually-hidden swiper-slide">
+              <p>Анна Павлова</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--alex visually-hidden swiper-slide">
+              <p>Алексей Лавров</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--alexandr visually-hidden swiper-slide">
+              <p>Александр Пашков</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+            <li class="trainers__item trainers__item--mary visually-hidden swiper-slide">
+              <p>Мария Кетова</p>
+              <span>CrossFit</span>
+              <ol>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit </li>
+                <li>Опыт — 6 лет</li>
+              </ol>
+            </li>
+          </ul>
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        </div>
+
       </section>
 
       <section class="advantage">
@@ -392,12 +398,12 @@
 
       <nav class="footer__nav">
         <ul>
-          <li class="footer__nav-item--logo"><a href="">supergym</a></li>
-          <li><a href="">Услуги</a></li>
-          <li><a href="">Абонементы</a></li>
-          <li><a href="">Акции</a></li>
-          <li><a href="">Тренеры</a></li>
-          <li><a href="">Расписание</a></li>
+          <li class="footer__nav-item footer__nav-item--logo"><a href="">supergym</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Абонементы</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Тренеры</a></li>
+          <li><a href="table.html">Расписание</a></li>
         </ul>
       </nav>
 

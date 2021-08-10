@@ -80,6 +80,9 @@
     border: 4px solid $white;
     margin-left: 76px;
     margin-top: 27px;
+    &:hover {
+      opacity: 50%;
+    }
     @media (max-width: $tablet-width-only) {
       font-size: 10px;
       line-height: 12px;
@@ -116,7 +119,7 @@
   }
 }
 
-.banner__conteiner {
+.crossfit {
   margin-top: 80px;
   margin-left: 50px;
   display: flex;
