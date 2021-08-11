@@ -116,6 +116,10 @@
     line-height: 21px;
     margin-top: 2px;
     margin-bottom: 10px;
+    &:hover,
+    &:focus {
+      opacity: 50%;
+    }
     @media (max-width: $tablet-width-only) {
       font-size: 18px;
       line-height: 27px;

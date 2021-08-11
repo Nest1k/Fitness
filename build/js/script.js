@@ -1,6 +1,41 @@
 'use strict';
 
-(function () {
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: '.trainers__button--left',
+    prevEl: '.trainers__button--right',
+  },
+
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      slidesPerGroup: 4,
+    },
+  }
+});
+
+const swiper2 = new Swiper('.mySwiper2', {
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: '.reviews__button--left',
+    prevEl: '.reviews__button--right',
+  },
+});
+
+// (function () {
 
   let currentActive = null
 
@@ -128,4 +163,4 @@
     })
   })
 
-})();
+// })();

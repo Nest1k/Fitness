@@ -75,7 +75,8 @@
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 26px;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 50%;
   }
   @media (max-width: $tablet-width-only) {
@@ -112,7 +113,8 @@
     margin-bottom: 60px;
     margin-top: 50px;
     letter-spacing: 0.05em;
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 50%;
     }
     @media (max-width: $tablet-width-only) {
@@ -194,7 +196,8 @@
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 18px;
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 50%;
     }
   }

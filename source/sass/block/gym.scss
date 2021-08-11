@@ -24,15 +24,18 @@
     font-family: "BebasNeue", "Arial", sans-serif;
     letter-spacing: 0.03em;
     margin-bottom: 5px;
+    margin-top: 42px;
     @media (max-width: $tablet-width-only) {
       font-size: 42px;
       line-height: 42px;
       text-align: center;
+      margin-top: 34px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 32px;
       line-height: 32px;
       text-align: left;
+      margin-top: 27px;
     }
   }
   @media (max-width: $tablet-width-only) {

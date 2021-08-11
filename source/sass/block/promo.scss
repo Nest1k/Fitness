@@ -120,7 +120,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-decoration: underline;
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 50%;
     }
     @media (max-width: $mobile-width-only){
@@ -142,6 +143,18 @@
 
 .promo__list {
   width: 48.5%;
+  li:nth-of-type(2) {
+    p {
+      @media (max-width: $tablet-width-only) {
+        width: 245px;
+        margin-bottom: 65px;
+      }
+      @media (max-width: $mobile-width-only) {
+        width: 160px;
+        margin-bottom: 20px;
+      }
+    }
+  }
   li {
     border-width: 7px;
     border-style: solid;
@@ -171,7 +184,7 @@
       margin-top: 10px;
       margin-bottom: 65px;
       @media (max-width: $tablet-width-only) {
-        width: 72%;
+        width: 155px;
         margin-bottom: 45px;
       }
       @media (max-width: $mobile-width-only){
@@ -190,7 +203,8 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       text-decoration: underline;
-      &:hover {
+      &:hover,
+      &:focus {
         opacity: 50%;
       }
       @media (max-width: $mobile-width-only){

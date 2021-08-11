@@ -1,10 +1,9 @@
 .trainers {
   color: $white;
-  max-width: 1160px;
-  width: 85%;
   margin: 0 auto;
-  margin-top: 117px;
+  margin-top: 75px;
   margin-bottom: 120px;
+  position: relative;
   h2 {
     font-size: 49px;
     line-height: 49px;
@@ -16,7 +15,7 @@
       font-size: 42px;
       line-height: 42px;
       text-align: center;
-      margin-bottom: 43px;
+      margin-bottom: 40px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 32px;
@@ -50,33 +49,11 @@
       text-align: center;
     }
   }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @media (max-width: $tablet-width-only) {
-      width: 100%;
-      margin: 0 auto;
-      max-width: 574px;
-    }
-    @media (max-width: $mobile-width-only) {
-      width: 226px;
-      justify-content: center;
-    }
-    li {
-      width: 22%;
-      @media (max-width: $tablet-width-only) {
-        width: 47%;
-      }
-      @media (max-width: $mobile-width-only) {
-        width: 100%;
-      }
-    }
-  }
   ol {
     padding-left: 68px;
-    padding-top: 37px;
+    padding-top: 21px;
     display: none;
+    width: 260px;
     li {
       padding-bottom: 13px;
       font-size: 14px;
@@ -84,17 +61,89 @@
       width: 143px;
       list-style-type: disc;
     }
+    @media (max-width: $tablet-width-only) {
+      width: 268px;
+    }
     @media (max-width: $mobile-width-only) {
       padding-left: 0px;
       padding-left: 48px;
+      width: 226px;
     }
   }
   @media (max-width: $tablet-width-only) {
-    margin-top: 98px;
+    margin-top: 66px;
+    overflow: hidden;
   }
   @media (max-width: $mobile-width-only) {
-    margin-top: 70px;
+    margin-top: 45px;
     margin-bottom: 68px;
+  }
+}
+
+.trainers__container {
+  max-width: 1160px;
+  min-width: 1060px;
+  width: 85%;
+  @media (max-width: $tablet-width-only) {
+    width: 566px;
+    max-width: 566px;
+    min-width: 566px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    max-width: 226px;
+    min-width: 226px;
+  }
+}
+
+.trainers__wrapper {
+  max-width: 1160px;
+  min-width: 1060px;
+  width: 85%;
+  @media (max-width: $tablet-width-only) {
+    width: 566px;
+    max-width: 566px;
+    min-width: 566px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    max-width: 226px;
+    min-width: 226px;
+  }
+}
+
+.trainers__item {
+  background-size: 260px 294px;
+  max-width: 260px;
+  min-width: 235px;
+  height: 294px;
+  &:hover,
+  &:focus {
+    ol,
+    span {
+      display: block;
+    }
+    background-color: rgba(16, 38, 84, 0.89);
+    p {
+      padding-top: 34px;
+      @media (max-width: $mobile-width-only) {
+        padding-top: 24px;
+      }
+    }
+  }
+  @media (max-width: $tablet-width-only) {
+    width: 268px;
+    max-width: 268px;
+    min-width: 268px;
+    height: 294px;
+    background-size: 268px 294px;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+    max-width: 226px;
+    min-width: 226px;
+    height: 274px;
+    background-size: 226px 274px;
   }
 }
 
@@ -103,34 +152,8 @@
   background-image: url("../img/photo-anna@1x.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  height: 294px;
-  background-size: 260px 294px;
-  &:hover {
-    ol,
-    span {
-      display: block;
-    }
-    background-color: rgba(16, 38, 84, 0.89);
-    p {
-      padding-top: 34px;
-      @media (max-width: $mobile-width-only) {
-        padding-top: 24px;
-      }
-    }
-  }
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/photo-anna@2x.jpg");
-    background-size: 260px 294px;
-  }
-  @media (max-width: $tablet-width-only) {
-    width: 268px;
-    background-size: 268px 294px;
-    display: none;
-  }
-  @media (max-width: $mobile-width-only) {
-    width: 226px;
-    height: 274px;
-    background-size: 226px 274px;
   }
 }
 
@@ -139,34 +162,8 @@
   background-image: url("../img/photo-alex@1x.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  height: 294px;
-  background-size: 260px 294px;
-  &:hover {
-    ol,
-    span {
-      display: block;
-    }
-    background-color: rgba(16, 38, 84, 0.89);
-    p {
-      padding-top: 34px;
-      @media (max-width: $mobile-width-only) {
-        padding-top: 24px;
-      }
-    }
-  }
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/photo-alex@2x.jpg");
-    background-size: 260px 294px;
-  }
-  @media (max-width: $tablet-width-only) {
-    width: 268px;
-    background-size: 268px 294px;
-    display: none;
-  }
-  @media (max-width: $mobile-width-only) {
-    width: 226px;
-    height: 274px;
-    background-size: 226px 274px;
   }
 }
 
@@ -175,34 +172,8 @@
   background-image: url("../img/photo-alexandr@1x.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  height: 294px;
-  background-size: 260px 294px;
-  &:hover {
-    ol,
-    span {
-      display: block;
-    }
-    background-color: rgba(16, 38, 84, 0.89);
-    p {
-      padding-top: 34px;
-      @media (max-width: $mobile-width-only) {
-        padding-top: 24px;
-      }
-    }
-  }
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/photo-alexandr@2x.jpg");
-    background-size: 260px 294px;
-  }
-  @media (max-width: $tablet-width-only) {
-    width: 268px;
-    background-size: 268px 294px;
-  }
-  @media (max-width: $mobile-width-only) {
-    width: 226px;
-    height: 274px;
-    background-size: 226px 274px;
-    display: none;
   }
 }
 
@@ -211,32 +182,54 @@
   background-image: url("../img/photo-mary@1x.jpg");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  height: 294px;
-  background-size: 260px 294px;
-  &:hover {
-    ol,
-    span {
-      display: block;
-    }
-    background-color: rgba(16, 38, 84, 0.89);
-    p {
-      padding-top: 34px;
-      @media (max-width: $mobile-width-only) {
-        padding-top: 24px;
-      }
-    }
-  }
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/photo-mary@2x.jpg");
-    background-size: 260px 294px;
   }
+}
+
+.trainers__button {
+  background-color: rgba(0, 0, 0, 0);;
+  color: #AFAFAF;
+  border: none;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 32px;
+  background-size: 16px 32px;
+  position: absolute;
+  top: 270px;
+  z-index: 10;
+  cursor: pointer;
   @media (max-width: $tablet-width-only) {
-    width: 268px;
-    background-size: 268px 294px;
+    top: 247px;
   }
   @media (max-width: $mobile-width-only) {
-    width: 226px;
-    height: 274px;
-    background-size: 226px 274px;
+    top: 227px;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
+  }
+}
+
+.trainers__button--left {
+  left: 47px;
+  content: "";
+  background-image: url("../img/arrow-left.svg");
+  @media (max-width: $tablet-width-only) {
+    left: 45px;
+  }
+  @media (max-width: $mobile-width-only) {
+    left: 15px;
+  }
+}
+
+.trainers__button--right {
+  right: 47px;
+  content: "";
+  background-image: url("../img/arrow-right.svg");
+  @media (max-width: $tablet-width-only) {
+    right: 45px;
+  }
+  @media (max-width: $mobile-width-only) {
+    right: 15px;
   }
 }
