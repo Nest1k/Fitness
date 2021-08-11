@@ -35,8 +35,6 @@ const swiper2 = new Swiper('.mySwiper2', {
   },
 });
 
-// (function () {
-
   let currentActive = null
 
   const activeRowClassName = 'timetable__table-active';
@@ -162,5 +160,3 @@ const swiper2 = new Swiper('.mySwiper2', {
 
     })
   })
-
-// })();
