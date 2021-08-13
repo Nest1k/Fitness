@@ -35,6 +35,34 @@ const swiper2 = new Swiper('.mySwiper2', {
   },
 });
 
+const mounthsTabs = document.querySelector('.membership__list-validity');
+const months = document.getElementsByName('mount');
+const subscriptionsList = document.querySelectorAll('.membership__list-price')
+
+function removeSubscriptionsListActive(arr, cls) {
+    arr.forEach(el => {
+    el.classList.remove(cls)
+  });
+};
+
+const handleMounthsTabsClick = (evt) => {
+  removeSubscriptionsListActive(subscriptionsList, 'membership__list-price--active')
+  for (var i = 0; i < months.length; i++) {
+    if (months[i].type == "radio" && months[i].checked) {
+      subscriptionsList[i].classList.add('membership__list-price--active')
+    }
+  }
+}
+
+function setEventListener(el, f) {
+  if(el) {
+      el.addEventListener('click', f)
+  }
+}
+
+setEventListener(mounthsTabs, handleMounthsTabsClick);
+
+
   let currentActive = null
 
   const activeRowClassName = 'timetable__table-active';
@@ -68,7 +96,8 @@ const swiper2 = new Swiper('.mySwiper2', {
     currentTime.classList.add(activeTimeClassName)
   };
 
-  table.addEventListener('click', handleTableClick);
+  // table.addEventListener('click', handleTableClick);
+  setEventListener(table, handleTableClick);
 
   //timetable mobile
 
@@ -95,7 +124,7 @@ const swiper2 = new Swiper('.mySwiper2', {
 
   let isSelectShown = false
 
-  overley.addEventListener('click', ev => {
+  setEventListener(overley, ev => {
     removeActiveClass(overley, activeOverlayClassName)
     removeActiveClass(containerDay, activeArrowClassName)
 

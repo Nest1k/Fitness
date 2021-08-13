@@ -96,6 +96,7 @@
             <img src="img/gym-mini-mobile@1x.jpg" srcset="img/gym-mini-mobile@2x.jpg 2x" width="320" height="167"
               alt="Видео спортзала">
           </picture>
+          <a href="#" aria-label="play/pause"></a>
         </div>
 
       </section>
@@ -104,10 +105,61 @@
         <div class="membership__container">
           <h2 id="membership">абонементы</h2>
 
-          <ul class="membership__list-validity">
-            <li><a href="#membership" tabindex="6">1 месяц</a></li>
-            <li><a href="#membership" tabindex="7">6 месяцев</a></li>
-            <li><a href="#membership" tabindex="8">12 месяцев</a></li>
+          <div class="membership__list-validity">
+            <input class="visually-hidden" type="radio" name="mount" id="mount1" checked>
+            <label for="mount1">1 месяц</label>
+            <input class="visually-hidden" type="radio" name="mount" id="mount6">
+            <label for="mount6">6 месяцев</label>
+            <input class="visually-hidden" type="radio" name="mount" id="mount12">
+            <label for="mount12">12 месяцев</label>
+          </div>
+
+          <ul class="membership__list-price membership__list-price--active">
+            <li tabindex="9">
+                <h3>С тренером</h3>
+                <p>12 занятий</p>
+                <b>5000</b>
+                <p class="membership__item-price">5000</p>
+                <a href="#">купить абонемент</a>
+            </li>
+            <li tabindex="10">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00 </p>
+                <b>1700</b>
+                <p class="membership__item-price">1700</p>
+                <a href="#">купить абонемент</a>
+            </li>
+            <li tabindex="11">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00 </p>
+                <b>2700</b>
+                <p class="membership__item-price">2700</p>
+                <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+
+          <ul class="membership__list-price">
+            <li tabindex="9">
+                <h3>С тренером</h3>
+                <p>72 занятий</p>
+                <b>3000</b>
+                <p class="membership__item-price">3000</p>
+                <a href="#">купить абонемент</a>
+            </li>
+            <li tabindex="10">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00 </p>
+                <b>1700</b>
+                <p class="membership__item-price">1700</p>
+                <a href="#">купить абонемент</a>
+            </li>
+            <li tabindex="11">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00 </p>
+                <b>1200</b>
+                <p class="membership__item-price">1200</p>
+                <a href="#">купить абонемент</a>
+            </li>
           </ul>
 
           <ul class="membership__list-price">
@@ -115,21 +167,21 @@
                 <h3>С тренером</h3>
                 <p>12 занятий</p>
                 <b>5000</b>
-                <p class="membership__item-price">5000 <span>&#8381;</span></p>
+                <p class="membership__item-price">5000</p>
                 <a href="#">купить абонемент</a>
             </li>
             <li tabindex="10">
                 <h3>Дневной</h3>
                 <p>с 8:00 до 17:00 </p>
                 <b>1700</b>
-                <p class="membership__item-price">1700 <span>&#8381;</span></p>
+                <p class="membership__item-price">1700</p>
                 <a href="#">купить абонемент</a>
             </li>
             <li tabindex="11">
                 <h3>Полный день</h3>
                 <p>с 8:00 до 22:00 </p>
                 <b>2700</b>
-                <p class="membership__item-price">2700 <span>&#8381;</span></p>
+                <p class="membership__item-price">2700</p>
                 <a href="#">купить абонемент</a>
             </li>
           </ul>

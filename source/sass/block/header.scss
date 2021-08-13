@@ -1,11 +1,11 @@
 .header {
-  background: linear-gradient(45deg, rgb(0, 61, 133) 9%, rgb(184, 0, 39) 87%);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   padding-bottom: 33px;
   @media (max-width: $tablet-width-only) {
-    padding-bottom: 60px;
+    padding-bottom: 63px;
   }
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
 }
 
@@ -22,7 +22,7 @@
       min-width: 324px;
       min-height: 390px;
       padding-right: 0;
-      margin-top: 25px;
+      margin-top: 19px;
     }
     @media (max-width: $mobile-width-only) {
       display: none;
@@ -59,12 +59,27 @@
   @media (max-width: $tablet-width-only) {
     width: 88%;
     min-width: 678px;
-    padding-top: 38px;
+    padding-top: 40px;
   }
   @media (max-width: $mobile-width-only) {
     width: 91%;
     min-width: 290px;
     padding-top: 19px;
+  }
+}
+
+.header__logo {
+  letter-spacing: 0.02em;
+  font-size: 26px;
+  line-height: 26px;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -75,6 +90,7 @@
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 26px;
+  padding-right: 3px;
   &:hover,
   &:focus {
     opacity: 50%;
@@ -82,6 +98,7 @@
   @media (max-width: $tablet-width-only) {
     font-size: 24px;
     line-height: 24px;
+    padding-right: 0;
   }
   @media (max-width: $mobile-width-only) {
     font-size: 20px;
@@ -124,18 +141,21 @@
     }
     @media (max-width: $mobile-width-only) {
       padding: 22px 83px;
+      margin-top: 40px;
     }
   }
   @media (max-width: $tablet-width-only) {
-    min-width: 327px;
-    max-width: 327px;
-    padding-right: 30px;
+    min-width: 324px;
+    max-width: 324px;
+    padding-right: 32px;
     padding-left: 0;
+    max-height: 434px;
   }
   @media (max-width: $mobile-width-only) {
     min-width: 290px;
     max-width: 290px;
     padding-right: 0;
+    max-height: auto;
   }
 }
 
@@ -150,6 +170,7 @@
   text-align: right;
   @media (max-width: $tablet-width-only) {
     padding-top: 0;
+    padding-right: 27px;
   }
   @media (max-width: $mobile-width-only) {
     padding-right: 10px;
@@ -160,15 +181,18 @@
   font-size: 49px;
   padding-top: 110px;
   padding-bottom: 10px;
+  letter-spacing: 0.03em;
   @media (max-width: $tablet-width-only) {
     font-size: 34px;
     padding-left: 100px;
     line-height: 40px;
     padding-top: 71px;
+    padding-bottom: 5px;
   }
   @media (max-width: $mobile-width-only) {
     font-size: 28px;
     line-height: 34px;
+    padding-bottom: 10px;
   }
 }
 

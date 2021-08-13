@@ -82,8 +82,10 @@
 
 .trainers__container {
   max-width: 1160px;
-  min-width: 1060px;
-  width: 85%;
+  min-width: 1020px;
+  width: 84.5%;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: $tablet-width-only) {
     width: 566px;
     max-width: 566px;
@@ -98,8 +100,8 @@
 
 .trainers__wrapper {
   max-width: 1160px;
-  min-width: 1060px;
-  width: 85%;
+  min-width: 1020px;
+ // width: 100%;
   @media (max-width: $tablet-width-only) {
     width: 566px;
     max-width: 566px;
@@ -115,7 +117,7 @@
 .trainers__item {
   background-size: 260px 294px;
   max-width: 260px;
-  min-width: 235px;
+  min-width: 225px;
   height: 294px;
   &:hover,
   &:focus {

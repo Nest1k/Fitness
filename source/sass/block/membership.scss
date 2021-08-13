@@ -41,7 +41,7 @@
       bottom: -108px;
       background-image: url(../img/discs-tablet@1x.png);
       @media (min-resolution: 1.5dppx) {
-        background-image: url(../img/tablet-desktop@2x.png);
+        background-image: url(../img/discs-tablet@2x.png);
         background-size: 347px 444px;
       }
     }
@@ -81,10 +81,10 @@
 
 .membership__list-validity {
   display: flex;
-  width: 341px;
-  justify-content: space-between;
+  min-width: 387px;
   margin: 0 auto;
   position: relative;
+  justify-content: center;
   &::after {
     content: "";
     width: 341px;
@@ -94,17 +94,28 @@
     top: 38px;
     @media (max-width: $tablet-width-only) {
       width: 332px;
+      top: 35px;
     }
     @media (max-width: $mobile-width-only) {
       width: 290px;
+      top: 32px;
     }
   }
-  a {
+  input {
+    :checked+label {
+      color: #102654;
+      border-bottom: 2px solid #D10A42;
+    }
+  }
+  label {
     color: rgba(16, 38, 84, 0.5);
     border-bottom: 2px solid rgba(120, 120, 120, 0);
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 8px;
+    margin-left: 23px;
+    margin-right: 23px;
+    font-family: "Roboto Condensed", "Courier", monospace;
     &:hover,
     &:focus {
       color: #102654;
@@ -113,21 +124,32 @@
     @media (max-width: $tablet-width-only) {
       font-size: 18px;
       line-height: 27px;
+      margin-left: 27px;
+      margin-right: 27px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 16px;
       line-height: 24px;
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(n+3) {
+        margin-left: 45px;
+      }
     }
   }
   @media (max-width: $tablet-width-only) {
-    width: 332px;
+    min-width: 332px;
   }
   @media (max-width: $mobile-width-only) {
-    width: 290px;
+    min-width: 290px;
   }
 }
 
 .membership__list-price {
+  display: none;
+}
+
+.membership__list-price--active {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +228,8 @@
     }
     @media (max-width: $mobile-width-only) {
       font-size: 80px;
-      left: 55px;
+      left: 50%;
+      margin-left: -81px;
       top: 128px;
     }
   }
@@ -225,20 +248,31 @@
     color: $blue;
     margin-bottom: 29px;
     text-shadow: #E8E8E8 -10px -30px 100px;
+    margin-left: -42px;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../img/icon-rublik.svg");
+      background-repeat: no-repeat;
+      background-size: 30px 42px;
+      width: 30px;
+      height: 42px;
+      position: absolute;
+      top: 23px;
+      margin-left: 14px;
+      @media (max-width: $mobile-width-only) {
+        width: 24px;
+        height: 33px;
+        background-size: 24px 33px;
+        top: 19px;
+        margin-left: 10px;
+      }
+    }
     @media (max-width: $mobile-width-only) {
       font-size: 48px;
       line-height: 72px;
       margin-top: 58px;
-    }
-  }
-  span {
-    font-size: 60px;
-    line-height: 90px;
-    color: $navy-blue;
-    text-shadow: none;
-    @media (max-width: $mobile-width-only) {
-      font-size: 48px;
-      line-height: 72px;
+      margin-left: -35px;
     }
   }
   a {

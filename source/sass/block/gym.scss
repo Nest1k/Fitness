@@ -96,8 +96,37 @@
   flex-wrap: wrap;
   position: relative;
   margin-top: 120px;
+  a {
+    position: absolute;
+    cursor: pointer;
+    content: "";
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    top: 352px;
+    left: 69px;
+    &:focus,
+    &:hover {
+      background-image: url("../img/icon-video-focus.svg");
+    }
+    @media (max-width: $tablet-width-only) {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+      z-index: 100;
+      top: 308px;
+      left: 50%;
+      margin-left: -36px;
+    }
+    @media (max-width: $mobile-width-only) {
+      top: 407px;
+    }
+  }
   @media (max-width: $tablet-width-only) {
     width: 100%;
+    max-width: 678px;
     justify-content: center;
     margin-top: 35px;
   }
@@ -117,7 +146,7 @@
     }
     @media (max-width: $mobile-width-only) {
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
   @media (max-width: $tablet-width-only) {
@@ -134,21 +163,16 @@
   position: absolute;
   top: 288px;
   left: -63px;
-  cursor: pointer;
   &:before {
     content: "";
     background-color: rgba(20, 54, 122, 0.5);
     position: absolute;
     width: 364px;
     height: 228px;
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
     background-position: 50% 50%;
     @media (max-width: $tablet-width-only) {
       width: 266px;
       height: 167px;
-      background-size: 73px 73px;
     }
     @media (max-width: $mobile-width-only) {
       width: 320px;
