@@ -4,6 +4,7 @@
   margin-top: 75px;
   margin-bottom: 120px;
   position: relative;
+  max-width: 1272px;
   h2 {
     font-size: 49px;
     line-height: 49px;
@@ -73,17 +74,19 @@
   @media (max-width: $tablet-width-only) {
     margin-top: 66px;
     overflow: hidden;
+    max-width: 768px;
   }
   @media (max-width: $mobile-width-only) {
     margin-top: 45px;
     margin-bottom: 68px;
+    max-width: 320px;
   }
 }
 
 .trainers__container {
   max-width: 1160px;
   min-width: 1020px;
-  width: 84.5%;
+  width: 91%;
   margin-left: auto;
   margin-right: auto;
   @media (max-width: $tablet-width-only) {
@@ -213,7 +216,7 @@
 }
 
 .trainers__button--left {
-  left: 47px;
+  left: 0px;
   content: "";
   background-image: url("../img/arrow-left.svg");
   @media (max-width: $tablet-width-only) {
@@ -225,7 +228,7 @@
 }
 
 .trainers__button--right {
-  right: 47px;
+  right: 0px;
   content: "";
   background-image: url("../img/arrow-right.svg");
   @media (max-width: $tablet-width-only) {

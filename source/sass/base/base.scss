@@ -12,6 +12,15 @@ body {
 
 .wrap {
   flex: 1 0 auto;
+  input:not([type=checkbox]):not([type=radio]),
+  textarea,
+  select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  }
 }
 
 a {

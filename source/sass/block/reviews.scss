@@ -2,7 +2,7 @@
   text-align: center;
   padding-bottom: 110px;
   position: relative;
-  max-width: 1368px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   h2 {
@@ -29,9 +29,11 @@
   }
   @media (max-width: $tablet-width-only) {
     padding-bottom: 90px;
+    max-width: 768px;
   }
   @media (max-width: $mobile-width-only) {
     padding-bottom: 60px;
+    max-width: 320px;
   }
 }
 
@@ -168,7 +170,7 @@
 }
 
 .reviews__button--left {
-  right: 1003px;
+  left: 263px;
   content: "";
   background-image: url("../img/arrow-left.svg");
   @media (max-width: $tablet-width-only) {
@@ -181,7 +183,7 @@
 }
 
 .reviews__button--right {
-  left: 1003px;
+  right: 263px;
   content: "";
   background-image: url("../img/arrow-right.svg");
   @media (max-width: $tablet-width-only) {

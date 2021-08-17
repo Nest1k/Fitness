@@ -68,6 +68,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     &::placeholder {
       color: $white;
       padding: 0;
@@ -101,6 +103,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     &::placeholder {
       color: $white;
       padding: 0;
