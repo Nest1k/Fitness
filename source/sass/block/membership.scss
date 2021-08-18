@@ -102,7 +102,7 @@
     }
   }
   input {
-    :checked+label {
+    &:checked+label {
       color: #102654;
       border-bottom: 2px solid #D10A42;
     }
